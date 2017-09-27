@@ -1,0 +1,18 @@
+.ie{
+    text-align: center;
+    position: fixed;
+    display: block;
+    background: #000;
+    margin: 0 auto;
+    width: 40%;
+}
+
+.ie>p{
+    color: #cd0202;
+    font: bold 36px 'arial';
+    padding: 50px;
+}
+
+.ie>p+p{
+    font-size: 26px;
+}

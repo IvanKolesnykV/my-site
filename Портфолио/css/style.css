@@ -1,0 +1,491 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body{
+    line-height: 1;
+    font:16px sans-serif;
+    color: #72ab00;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+}
+a{
+    text-decoration: none;
+    word-wrap: break-word;
+    display: inline-block;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+label{
+    cursor: pointer;
+}
+@font-face {
+    font-family: 'kobzar';
+    src: url('../font/kobzar/kobzar.eot');
+    src: url('../font/kobzar/kobzar.eot?#iefix') format('embedded-opentype'),
+    url('../font/kobzar/kobzar.woff2') format('woff2'),
+    url('../font/kobzar/kobzar.woff') format('woff'),
+    url('../font/kobzar/kobzar.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.margen-top{margin-top:10px;}
+.margen-top-two{margin-top:20px;}
+.margen-top-four{margin-top:40px;}
+.margen-bottom-four{margin-bottom:40px;}
+.pading-top{padding-top:20px;}
+.pading-bottom{padding-bottom:20px;}
+.right{float: right;}
+.border-radius{-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+.border-top{border-top:4px #9A9A9A double;}
+.circle{-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;}
+.transition{transition: .5s all linear;}
+.active{background: #9a9a9a;}
+/*                     fixet navigation     */
+.fixet{
+    position: fixed;
+    top:50%;
+    right: 6%;
+    margin-top: -65px;
+    z-index:5;
+}
+.fixet>ul>li{
+    margin: 5px;
+}
+.fixet>ul>li>a{
+    padding:5px;
+    border: 1px #9A9A9A solid;
+    position: relative;
+}
+.fixet>ul>li>a:before{
+    content: '';
+    position: absolute;
+    color: #fff;
+}
+.fixet>ul>li:hover>a:before{
+    content: 'Главная';
+    right:18px;
+    bottom:18px;
+    padding: 5px 20px;
+    background: #000;
+    background: rgba(0, 0, 0, 0.3);
+
+    transition: .3s all linear;
+    -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;
+}
+.fixet>ul>li+li:hover>a:before{content: 'Обо_мне';}.fixet>ul>li+li+li:hover>a:before{content: 'Сервис';}.fixet>ul>li+li+li+li:hover>a:before{content: 'Портфолио';}.fixet>ul>li+li+li+li+li:hover>a:before{content: 'Контакты';}
+
+.fixet>ul>li:hover>a:after{
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: 7px;
+    width: 14px;
+    border-bottom:1px #000 solid;
+    border-bottom:1px rgba(0, 0, 0, 0.3) solid;
+
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*
+                       header               */
+#homepage{
+    position: fixed;
+    width:90%;
+    z-index: 4;
+    top:0;
+    left: 0;
+    border-bottom: 3px #72ab00 solid;
+    padding:20px 5% 30px;
+
+    background: #000;
+    background: rgba(0, 0, 0, 0.8);
+}
+.header h3{
+    font-size:31px;
+}
+.header h3>span{
+    color: #9A9A9A;
+}
+.header h1{
+    font-size:18px;
+}
+.header .nav{
+    position: absolute;
+    margin-right: -1px;
+    top:55px;
+    right: 5%;
+    width:90%;
+}
+.header ul{
+    margin-top: 20px;
+    height:0;
+    padding-top:20px;
+    overflow: hidden;
+    position: relative;
+    width: 30px;
+    border: 1px #9A9A9A solid;
+}
+.header ul:hover{
+    width: 100%;
+    height:144px;
+    background: #ededed;
+}
+.header ul:before, .header ul:after{
+    content: '';
+    position: absolute;
+    right: 5px;
+    margin-left:-10px;
+    top: 10px;
+    margin-top:-2px;
+    height:4px;
+    width:20px;
+    background: #9A9A9A;
+    transition: .5s all linear;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.header ul:hover:before{
+    margin-top:-4px;
+}
+.header ul:hover:after{
+    margin-top:2px;
+}
+.header li{
+    border-bottom: 1px #000 solid;
+    padding-left: 0;
+}
+.header li:hover{
+    background:#72ab00;
+    padding-left:50px;
+}
+.header li:last-child{
+    border-bottom:none;
+}
+.header a{
+    text-transform: uppercase;
+    padding:5px;
+    color: #000;
+    display: block;
+}
+/*                          wrapper             */
+.wrapper{
+    width:90%;
+    margin:120px auto 10px;
+    border: 1px #9A9A9A solid;
+    border-radius: 5px;
+    padding:15px;
+    box-sizing: border-box;
+    background: #ededed;
+}
+/*                          homepage             */
+
+
+.homepage>p{
+    font-size: 18px;
+}
+.homepage>p>span{
+    font-size: 38px;
+    display: block;
+    font-weight:700;
+}
+.homepage h6{
+    font-weight:600;
+    color: #494949;
+}
+.homepage ul{
+    padding-left: 10px;
+}
+.homepage ul>li>a{
+    color: #9A9A9A;
+    position: relative;
+}
+.homepage ul>li>a:first-letter {
+    font-size: 150%;
+}
+.homepage ul>li>a:before{
+    content: '';
+    position: absolute;
+    top:13px;
+    left:-10px;
+    padding: 2px;
+    border:1px #9A9A9A solid;
+    transition: .5s all linear;
+
+    -webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+}
+.homepage ul>li>a:hover:before{
+    background: #9A9A9A;
+}
+.homepage p>a, .homepage p+p>span{
+    font-size: 14px;
+    color: #494949;
+}
+.homepage p+p>span{
+    font-weight:100;
+    display: inline-block;
+}
+.homepage p>a .fa, .vk{
+    padding:10px;
+    background: #fff;
+}
+.homepage p>a .fa:hover, .vk:hover{
+    background: #0063ff;
+    color: #fff;
+}
+.homepage div.margen-top-two{
+    text-align: center;
+}
+.homepage div.margen-top-two>a{
+    text-transform: uppercase;
+    padding:10px 40px;
+    background: #72ab00;
+    color: #fff;
+    border:1px #72ab00 solid;
+}
+.homepage div.margen-top-two>a:hover{
+    background: #90d800;
+
+    -webkit-box-shadow: 0px 0px 3px 0px #000;
+    -moz-box-shadow:    0px 0px 3px 0px #000;
+    box-shadow:         0px 0px 3px 0px #000;
+}
+/*                          about me            */
+
+.aboutme h6, .services h6, .portfolio h6, .contactme h6{
+    font-size:30px;
+}
+.aboutme h6>span, .services h6>span, .portfolio h6>span{
+    font-size: 25px;
+    display: block;
+    line-height: 18px;
+}
+.aboutme p, .services p{
+    color: #9A9A9A;
+}
+.aboutme p.thanks{
+    color: #72ab00;
+    font-weight:500;
+    font-size: 20px;
+    text-align: center;
+}
+#services p>span{
+    text-transform: uppercase;
+    margin:10px 0;
+    display: block;
+    color: #72ab00;
+}
+#services .subtitle{
+    font-size:20px;
+    color: #72ab00;
+}
+/*                          portfolio           */
+
+#portfolio>.carousel-hider{
+    height:220px;
+    width:185px;
+    overflow: hidden;
+    margin: 40px auto 0;
+    position: relative;
+}
+#portfolio>.carousel-hider>ul{
+    width:10000px;
+    position: absolute;
+}
+#portfolio>.carousel-hider>ul>li{
+    width: 185px;
+    float: left;
+    text-align: center;
+    margin-right: 15px;
+}
+#portfolio>.carousel-hider>ul>li>a>img{
+    width:100%;
+    height:180px;
+}
+#portfolio .carousel-arrow-right, #portfolio .carousel-arrow-left{
+    position: absolute;
+    top:0;
+    bottom:0;
+    width:20px;
+    background: #acff00;
+    background: rgba(114, 171, 0, 0.2);
+    cursor: pointer;
+}
+#portfolio .carousel-arrow-right:hover, #portfolio .carousel-arrow-left:hover{
+    background: rgba(114, 171, 0, 0.5);
+}
+#portfolio .carousel-arrow-right>span, #portfolio .carousel-arrow-left>span{
+    font-size: 35px;
+    margin-top: 83px;
+    color: #fff;
+}
+#portfolio .carousel-arrow-right{right:0px;}
+#portfolio .carousel-arrow-left{left:0px;}
+#portfolio a>span{color: #72ab00;}
+
+/*                      contactme       */
+
+.contactme h6>span{
+    color: #9A9A9A;
+    font-size: 25px;
+}
+
+#contactme>p>span, #contactme>p>a{
+    color: #000;
+}
+
+#scroller{
+    font-size: 30px;
+    line-height:18px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    display:none;
+
+}
+a.to-bottom{
+    margin-bottom:20px;}
+a.to-bottom, a.to-top{
+    margin-left: 50%;
+}
+a.to-bottom:hover, a.to-top:hover{
+    color: #72ab00;
+}
+
+@media screen and (min-width: 480px){
+    #portfolio>.carousel-hider{
+        width:385px;
+    }
+}
+@media screen and (min-width: 800px){
+    #portfolio>.carousel-hider{
+        width:690px;
+        height:300px;
+    }
+    #portfolio>.carousel-hider>ul>li{
+        width:220px;
+    }
+    #portfolio>.carousel-hider>ul>li>a>img{
+        height:260px;
+    }
+    #portfolio .carousel-arrow-right>span, #portfolio .carousel-arrow-left>span{
+        margin-top:137px;
+    }
+    .header ul{
+        width: 65%;
+        margin-top: -20px;
+        height: auto;
+        padding: 5px;
+        font-size: 0;
+    }
+    .header ul:hover{
+        width: 65%;
+        height: auto;
+        background: transparent;
+    }
+    .header ul:after, .header ul:before{
+        display: none;
+    }
+    .header ul>li{
+        display: inline;
+        text-align: center;
+        padding:15px 0 5px;
+        margin: 0 1%;
+        position: relative;
+    }
+    .header ul>li:hover{
+        padding-left: 0;
+        background: transparent;
+        border-bottom:none;
+    }
+    .header ul>li:before{
+        content: '';
+        position: absolute;
+        bottom:0;
+        left: 0;
+        right: 100%;
+        height:2px;
+
+        transition: .3s all linear;
+    }
+    .header ul>li:hover:before{
+        right: 30%;
+        background: #72ab00;
+    }
+    .header ul>li:last-child{
+        border-bottom: 1px #000 solid;
+    }
+    .header ul>li:last-child:hover{
+        border-bottom: none;
+    }
+    .header ul>li>a{
+        display: inline-block;
+        width: 18%;
+        box-sizing: border-box;
+        font-size: 11px;
+        color: #fff;
+    }
+}
+@media screen and (min-width: 1024px){
+    #portfolio>.carousel-hider{
+        width:910px;
+    }
+    .header ul>li>a{
+        font-size: 14px;
+    }
+}
+
+
+
+

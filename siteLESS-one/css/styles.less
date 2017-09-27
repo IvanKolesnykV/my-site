@@ -1,0 +1,71 @@
+@green: green;
+.rad(@rest...){
+	-webkit-border-radius: @arguments;
+	-moz-border-radius: @arguments;
+	-o-border-radius: @arguments;
+	border-radius: @arguments;
+}
+.transition(@rest...){
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+
+body{
+	color: @green;
+	background: #333;
+	.nav{
+		text-align: center;
+		color: #333;
+		padding-top: 10px;
+		margin: 10px 5px;
+		background: @green;
+		height: 100px;
+		.rad(40%, 10%, 40%, 10%);
+		.screenMin({
+			background: #111;
+		});
+		.screenXs({
+			background: #333;
+			border: 2px #fff solid;
+		});
+		.screenSm({
+			background: #555;
+		});
+		.screenMd({
+			background: #777;
+		});
+		.screenMax({
+			background: #999;
+		});
+	}
+}
+.screenMin(@rules){
+	@media screen and (min-width: 360px){
+		@rules();
+	}
+}
+.screenXs(@rules){
+	@media screen and (min-width: 480px){
+		@rules();
+	}
+}
+.screenSm(@rules){
+	@media screen and (min-width: 600px){
+		@rules();
+	}
+}
+.screenMd(@rules){
+	@media screen and (min-width: 800px){
+		@rules();
+	}
+}
+.screenMax(@rules){
+	@media screen and (min-width: 1024px){
+		@rules();
+	}
+}
+
+.nav{
+}

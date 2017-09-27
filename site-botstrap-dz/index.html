@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Brotherhood</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="fixed hidden-xs">
+        <ul>
+            <li><a href="#"><span class="glyphicon glyphicon-earphone"></span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-gift"></span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></li>
+        </ul>
+    </div>
+    <div class="container-fluid header">
+        <div class="header-bg">
+            <div class="container">
+                <div class="col-xs-6 col-sm-6 col-md-4 logo">
+                    <a href="#" class="hidden-xs"><img class="img-responsive" src="img/logo.png" alt="Логотип"></a>
+                    <a href="#" class="visible-xs"><img class="img-responsive " src="img/logo-min.png" alt="Логотип"></a>
+                </div>
+                <div class="col-xs-6 col-md-4 language">
+                    <ul>
+                        <li><a href="#">Рус</a></li>
+                        <li><a href="#">Укр</a></li>
+                        <li><a href="#">Eng</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-md-4 basket">
+                    <div class="row">
+                        <a href="#">Кошик: <span>27 товарів</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="header-nav">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="glyphicon glyphicon-align-center"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar">
+                            <li><a href="#">новини</a></li>
+                            <li><a href="#">магазин</a></li>
+                            <li><a href="#">дилери</a></li>
+                            <li><a href="#">доставка</a></li>
+                            <li><a href="#">про нас</a></li>
+                            <li><a href="#">контакти</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid" id="series">
+        <img src="img/series-bg.jpg" alt="фоновая картинка">
+        <div class="row">
+            <div class="container">
+                <div>
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home_" aria-controls="home_" role="tab" data-toggle="tab">tactical</a></li>
+                        <li role="presentation"><a href="#profile_" aria-controls="profile_" role="tab" data-toggle="tab">highland</a></li>
+                        <li role="presentation"><a href="#messages_" aria-controls="messages_" role="tab" data-toggle="tab">simple</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home_">
+                            <div class="col-12-xs">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4">
+                                        <div class="row">
+                                            <h5>серія</h5>
+                                            <h2>tactical</h2>
+                                            <p><span>власна розроботка</span> українських військових, що увібрала в себе <span>найкраще</span> з нині можливого:</p>
+                                             <ul class="advantage">
+                                                <li><a href="#"><span class="glyphicon glyphicon-stop"></span>якість тканин і пошиву</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-stop"></span>зручність крою</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-stop"></span>функціональність у використанні</a></li>
+                                             </ul>
+                                            <div class="lin"><a href="#" class="next-transform">перейти до каталогу<span class="glyphicon glyphicon-menu-right"></span></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-6 col-lg-8">
+                                        <div class="row">
+                                            <img src="img/tactical-sm.png" alt="военная форма" class="img-responsive visible-sm-inline">
+                                            <img src="img/tactical-md.png" alt="военная форма" class="img-responsive visible-md-inline">
+                                            <img src="img/tactical-lg.png" alt="военная форма" class="img-responsive visible-lg-inline">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile_">
+                            <div class="col-12-xs">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4">
+                                        <div class="row">
+                                            <h5>серія</h5>
+                                            <h2>highland</h2>
+                                            <p><span>власна розроботка</span> українських військових, що увібрала в себе <span>найкраще</span> з нині можливого:</p>
+                                            <ul class="advantage">
+                                                <li><a href="#"><span class="glyphicon glyphicon-stop"></span>якість тканин і пошиву</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-stop"></span>зручність крою</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-stop"></span>функціональність у використанні</a></li>
+                                            </ul>
+                                            <div class="lin"><a href="#" class="next-transform">перейти до каталогу<span class="glyphicon glyphicon-menu-right"></span></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-6 col-lg-8">
+                                        <div class="row">
+                                            <img src="img/tactical-sm.png" alt="военная форма" class="img-responsive visible-sm-inline">
+                                            <img src="img/tactical-md.png" alt="военная форма" class="img-responsive visible-md-inline">
+                                            <img src="img/tactical-lg.png" alt="военная форма" class="img-responsive visible-lg-inline">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="messages_">
+                            <div class="col-12-xs">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4">
+                                        <div class="row">
+                                            <h5>серія</h5>
+                                            <h2>simple</h2>
+                                            <p><span>власна розроботка</span> українських військових, що увібрала в себе <span>найкраще</span> з нині можливого:</p>
+                                            <ul class="advantage">
+                                                <li><a href="#"><span class="glyphicon glyphicon-stop"></span>якість тканин і пошиву</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-stop"></span>зручність крою</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-stop"></span>функціональність у використанні</a></li>
+                                            </ul>
+                                            <div class="lin"><a href="#" class="next-transform">перейти до каталогу<span class="glyphicon glyphicon-menu-right"></span></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-6 col-lg-8">
+                                        <div class="row">
+                                            <img src="img/tactical-sm.png" alt="военная форма" class="img-responsive visible-sm-inline">
+                                            <img src="img/tactical-md.png" alt="военная форма" class="img-responsive visible-md-inline">
+                                            <img src="img/tactical-lg.png" alt="военная форма" class="img-responsive visible-lg-inline">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="cloth">
+        <img src="img/cloth-bg.jpg" alt="фон тканин">
+        <div class="container">
+            <div class="row">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="h">
+                                <h4>тканина</h4>
+                            </div>
+                            <div class="wreper">
+                                <h3>тип тканини: <span>кордура</span></h3>
+                                <p>Тканина кордура - нейлонова водонепроникна тканина з підвищеною стійкістю до будь механічних впливів. PU просочення і особливе плетіння ниток забезпечують повну водоніпроніцаемость. Тканина стійка до перепадів температур і впливу ультравіолету.</p>
+                                <p><span>Переваги:</span> вологостійкість, вогнестійкість</p>
+                                <div>
+                                    <ul>
+                                        <li><p>доступні кольори:</p></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                    </ul>
+                                    <div class="lin"><a href="#">перейти до каталогу <span class="glyphicon glyphicon-menu-right"></span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="h">
+                                <h4>тканина</h4>
+                            </div>
+                            <div class="wreper">
+                                <h3>тип тканини: <span>кордура</span></h3>
+                                <p>Тканина кордура - нейлонова водонепроникна тканина з підвищеною стійкістю до будь механічних впливів. PU просочення і особливе плетіння ниток забезпечують повну водоніпроніцаемость. Тканина стійка до перепадів температур і впливу ультравіолету.</p>
+                                <p><span>Переваги:</span> вологостійкість, вогнестійкість</p>
+                                <div>
+                                    <ul>
+                                        <li><p>доступні кольори:</p></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                    </ul>
+                                    <div class="lin"><a href="#">перейти до каталогу <span class="glyphicon glyphicon-menu-right"></span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="h">
+                                <h4>тканина</h4>
+                            </div>
+                            <div class="wreper">
+                                <h3>тип тканини: <span>кордура</span></h3>
+                                <p>Тканина кордура - нейлонова водонепроникна тканина з підвищеною стійкістю до будь механічних впливів. PU просочення і особливе плетіння ниток забезпечують повну водоніпроніцаемость. Тканина стійка до перепадів температур і впливу ультравіолету.</p>
+                                <p><span>Переваги:</span> вологостійкість, вогнестійкість</p>
+                                <div>
+                                    <ul>
+                                        <li><p>доступні кольори:</p></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                    </ul>
+                                    <div class="lin"><a href="#">перейти до каталогу <span class="glyphicon glyphicon-menu-right"></span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <div class="first-child"></div>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <div></div>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid worck-q" id="worck-q">
+        <div class="container">
+            <div class="row">
+            <div class="col-xs-12">
+                <div class="row h">
+                    <h5>як ми працюємо</h5>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="visible-md">
+                            <div class="row circle">
+                                <div class=" img-md img">
+                                    <img src="img/content.jpg" alt="идея" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="visible-lg">
+                            <div class="circle circle-lg">
+                                <div class=" img-lg img">
+                                    <img src="img/content.jpg" alt="идея" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                            <div class="row">
+                                <h6>спочатку <span>ідея</span></h6>
+                                <ul>
+                                    <li><a href="#"><span class="glyphicon glyphicon-stop"></span>Усі моделі розробляються українськими  військовими, тому моделі досконалі та зручні</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-stop"></span>Кожен елемент моделі знаходиться на своєму функціональному місці, для нього підібраний найкращий крій та матеріали, використовується найдосконаліша фурнітура</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-stop"></span>Ідея постійно вдосконалюється, враховуються всі помилки, завдяки налагодженому діалогу з реальними користувачами форми</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid worck-q" id="worck-w">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">                </div>
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-md-6 col-md-push-6">
+                            <div class="visible-md">
+                                <div class="row circle">
+                                    <div class=" img-md img">
+                                        <span class="hover-type-none">
+                                        <img src="img/worck-w.jpg" alt="створення речі" class="img-responsive">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="visible-lg">
+                                <div class="circle circle-lg">
+                                    <div class=" img-lg img">
+                                        <img src="img/worck-w.jpg" alt="створення речі" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-md-pull-6">
+                            <div class="row">
+                                <h6>потім <span>створення речі</span></h6>
+                                <ul>
+                                    <li><a href="#"><span class="glyphicon glyphicon-stop"></span>Виробництво налагоджене на власних виробничих потужностях, а отже якість виробу контролюється нами особисто</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-stop"></span>Для зменшення помилок через людський фактор, всі процеси максимально автоматизовані</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-stop"></span>Кожен вироблений зразок гарантованно проходить контроль якості. Помилки виключені.</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid worck-q" id="worck-e">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">                </div>
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="visible-md">
+                                <div class="row circle">
+                                    <div class=" img-md img">
+                                        <img src="img/worck-e.jpg" alt="тестування" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="visible-lg">
+                                <div class="circle circle-lg">
+                                    <div class=" img-lg img">
+                                        <img src="img/worck-e.jpg" alt="тестування" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="row">
+                                <h6>і нарешті <span>тестування</span></h6>
+                                <ul>
+                                    <li><a href="#"><span class="glyphicon glyphicon-stop"></span>Одяг тестується як на полігонах, так і у реальних умовах АТО</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-stop"></span>Постійно збирається статистика відгуків та побажань</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-stop"></span>Всі доцільні відгуки користувачів нашої продукції завжди трансформуються у нові ідеї</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="map-fluid">
+        <div class="container">
+            <div class="row">
+                <h6>наші дилери</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div id="map"></div>
+                <script type="text/javascript">
+                    function initMap() {
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 6,
+                        center: {lat: 48.960122, lng: 31.217231},
+                        scrollwheel: false,
+                        mapTypeId: google.maps.MapTypeId.TERRAIN,
+                        disableDefaultUI: true,
+                        styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+                    });
+                    setMarkers(map);
+                }
+                var beaches = [
+                    ['Львов' , 49.829612, 23.995351, 21],
+                    ['Черновцы' , 48.294140, 25.911871, 20],
+                    ['Винница' , 49.194763, 28.455801, 19],
+                    ['Житомир' , 50.245932, 28.653555, 18],
+                    ['Киев' , 50.456237, 30.521231, 17],
+                    ['Чернигов' , 51.480143, 31.246328, 16],
+                    ['Суммы' , 50.887918, 34.783926, 15],
+                    ['Черкаси' , 49.395379, 32.015371, 14],
+                    ['Кировоград' , 48.497978, 32.188956, 13],
+                    ['Кременчуг' , 49.036563, 33.377676, 12],
+                    ['Полтава' , 49.580935, 34.520254, 11],
+                    ['Кривой рог' , 47.885546, 33.399648, 10],
+                    ['Днепропетровск' , 48.427880, 35.025625, 9],
+                    ['Запорожье' , 47.811818, 35.091543, 8],
+                    ['Харьков' , 49.949939, 36.190175, 7],
+                    ['Донецк' , 47.988589, 37.794179, 6],
+                    ['Луганск' , 48.544388, 39.288320, 5],
+                    ['Мариуполь' , 47.068766, 37.486562, 4],
+                    ['Одесса' , 46.466762, 30.718984, 3],
+                    ['Херсон' , 46.587701, 32.542715, 2],
+                    ['Николаев' , 46.948903, 31.971426, 1]
+                ];
+                function setMarkers(map) {
+                    var image = 'img/location.png';
+                    for (var i = 0; i < beaches.length; i++) {
+                        var beach = beaches[i];
+                        var marker = new google.maps.Marker({
+                            position: {lat: beach[1], lng: beach[2]},
+                            map: map,
+                            icon: image,
+                            title: beach[0],
+                            zIndex: beach[3]
+                        });
+                    }
+                }
+
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeeVlKrrjHAh4Unjhr1qQGK1m2YUwrsjg&callback=initMap"
+                    async defer></script>
+        </div>
+    </div>
+    <div class="container-fluid footer hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 logo">
+                    <div class="row">
+                    <a href="#"><img class="img-responsive" src="img/logo-footer.png" alt="Логотип"></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 adds">
+                    <div class="row">
+                    <a href="#"><span class="glyphicon glyphicon-envelope"></span>sales@brother-hood.com.ua</a>
+                    <p>ст. м “Либідська”<span>м. Київ, вул. К. Малевича, 86 І</span></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-push-3 col-md-4 col-md-push-0 tel">
+                    <div class="row">
+                    <a href="#"><span class="glyphicon glyphicon-earphone"></span>Замовити зворотнiй дзвiнок</a>
+                    <p>+38 (050) <span>317-64-44</span></p>
+                    <p>+38 (067) <span>325-57-53</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ie">
+        <p>ERROR</p>
+        <p>Обновите свой браузер, версия више 8</p>
+    </div>
+</body>
+</html>
